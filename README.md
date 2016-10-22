@@ -3,13 +3,14 @@
 % rév. 0.0.1 du 10/07/2016
 % rév. 0.0.2 du 10/08/2016
 % rév. 0.0.3 du 10/09/2016
+% rév. 0.0.4 du 20/10/2016
 
 ---
 
 # Building #
 
 ```bash
-$ docker build -t dgricci/haskell:0.0.3 -t dgricci/haskell:latest .
+$ docker build -t dgricci/haskell:0.0.4 -t dgricci/haskell:latest .
 ```
 
 ## Behind a proxy (e.g. 10.0.4.2:3128) ##
@@ -18,7 +19,7 @@ $ docker build -t dgricci/haskell:0.0.3 -t dgricci/haskell:latest .
 $ docker build \
     --build-arg http_proxy=http://10.0.4.2:3128/ \
     --build-arg https_proxy=http://10.0.4.2:3128/ \
-    -t dgricci/haskell:0.0.3 -t dgricci/haskell:latest .
+    -t dgricci/haskell:0.0.4 -t dgricci/haskell:latest .
 ```
 
 ## Build command with arguments default values ##
@@ -27,7 +28,7 @@ $ docker build \
 $ docker build \
     --build-arg CABAL_VERSION=1.24 --build-arg GHC_VERSION=8.0.2 \
     --build-arg HAPPY_VERSION=1.19.5 --build-arg ALEX_VERSION=3.1.7 \
-    -t dgricci/haskell:0.0.3 -t dgricci/haskell:latest .
+    -t dgricci/haskell:0.0.4 -t dgricci/haskell:latest .
 ```
 
 # Use #
