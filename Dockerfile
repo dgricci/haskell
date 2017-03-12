@@ -1,7 +1,7 @@
 ## Dockerfile for a haskell environment
 ## Cf. https://github.com/freebroccolo/docker-haskell/blob/e0efde5504642864811a7697ab945067bb6a042e/8.0/Dockerfile
 ## from Chris Biscardi <chris@christopherbiscardi.com>
-FROM       dgricci/jessie:0.0.3
+FROM       dgricci/jessie:0.0.4
 MAINTAINER Didier Richard <didier.richard@ign.fr>
 
 ## different versions - use argument when defined otherwise use defaults
