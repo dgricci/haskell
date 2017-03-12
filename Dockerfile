@@ -6,9 +6,9 @@ MAINTAINER Didier Richard <didier.richard@ign.fr>
 
 ## different versions - use argument when defined otherwise use defaults
 ARG CABAL_VERSION
-ENV CABAL_VERSION   ${CABAL_VERSION:-1.24}
+ENV CABAL_VERSION   ${CABAL_VERSION:-2.0}
 ARG GHC_VERSION
-ENV GHC_VERSION     ${GHC_VERSION:-8.0.2}
+ENV GHC_VERSION     ${GHC_VERSION:-8.2.1}
 ARG HAPPY_VERSION
 ENV HAPPY_VERSION   ${HAPPY_VERSION:-1.19.5}
 ARG ALEX_VERSION

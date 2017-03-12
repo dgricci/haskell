@@ -45,7 +45,7 @@ See `dgricci/jessie` README for handling permissions with dockers volumes.
 
 ```bash
 $ docker run -it --rm -e USER_ID=$UID -e USER_NAME=$USER dgricci/haskell
-GHCi, version 8.0.1.20160905: http://www.haskell.org/ghc/  :? for help
+GHCi, version 8.2.0.20170310: http://www.haskell.org/ghc/  :? for help
 Prelude> :quit
 Leaving GHCi.
 ```
