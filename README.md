@@ -1,14 +1,15 @@
-% Environnement Haskell pour pandoc
-% Didier Richard
+% Environnement Haskell pour pandoc  
+% Didier Richard  
 % 12/03/2017
 
 ---
 
 revision:
-    - 0.0.1 : 10/07/2016
-    - 0.0.2 : 10/08/2016
-    - 0.0.3 : 10/09/2016
-    - 0.0.4 : 20/10/2016
+    - 0.0.1 : 10/07/2016  
+    - 0.0.2 : 10/08/2016  
+    - 0.0.3 : 10/09/2016  
+    - 0.0.4 : 20/10/2016  
+    - 0.0.5 : 08/04/2018  
 
 ---
 
@@ -33,7 +34,7 @@ $ docker tag dgricci/haskell:$(< VERSION) dgricci/haskell:latest
 
 ```bash
 $ docker build \
-    --build-arg CABAL_VERSION=1.24 --build-arg GHC_VERSION=8.0.2 \
+    --build-arg CABAL_VERSION=2.2 --build-arg GHC_VERSION=8.4.2 \
     --build-arg HAPPY_VERSION=1.19.5 --build-arg ALEX_VERSION=3.1.7 \
     -t dgricci/haskell:$(< VERSION) .
 $ docker tag dgricci/haskell:$(< VERSION) dgricci/haskell:latest
@@ -44,8 +45,8 @@ $ docker tag dgricci/haskell:$(< VERSION) dgricci/haskell:latest
 See `dgricci/jessie` README for handling permissions with dockers volumes.
 
 ```bash
-$ docker run -it --rm -e USER_ID=$UID -e USER_NAME=$USER dgricci/haskell
-GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+$ docker run -it --rm -e USER_ID=$UID -e USER_NAME=$USER dgricci/haskell:$(< VERSION)
+GHCi, version 8.4.1.20180329: http://www.haskell.org/ghc/  :? for help
 Prelude> :quit
 Leaving GHCi.
 ```
